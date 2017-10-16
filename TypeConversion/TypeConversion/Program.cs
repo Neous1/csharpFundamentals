@@ -19,9 +19,15 @@ namespace TypeConversion
             //byte b = (byte)i; 
             //Console.WriteLine(i);
 
-            int i = 1000;
-            byte b = (byte)i;
-            Console.WriteLine(b); // 232 some of the bytes would lost cuz 
+            //int i = 1000;
+            //byte b = (byte)i;
+            //Console.WriteLine(b); // 232 some of the bytes would lost cuz 
+
+            var number = "1234";
+            int b = Convert.ToInt32(number);
+
+            Console.WriteLine(b);
+
 
 
 
