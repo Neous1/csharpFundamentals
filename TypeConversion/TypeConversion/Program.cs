@@ -10,9 +10,17 @@ namespace TypeConversion
     {
         static void Main(string[] args)
         {
-            byte b = 1; //1 byte
-            int i = b; // 4 bytes
+            //byte b = 1; //1 byte
+            //int i = b; // 4 bytes
+            //Console.WriteLine(i);
+
+
+            int i = 1; 
+            byte b = (byte)i; 
             Console.WriteLine(i);
+
+
+
         }
     }
 }
