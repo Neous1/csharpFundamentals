@@ -28,6 +28,9 @@ namespace TypeConversion
 
             Console.WriteLine(b);
 
+            int z = 78;
+            double result = (double)(z + 3.21);
+
 
 
 
