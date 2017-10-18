@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             
             Console.WriteLine("Please enter a number between 1-10");
@@ -22,8 +18,6 @@ namespace Ex1
             {
                 Console.WriteLine("Invalid");
             }
-
         }
- 
     }
 }
