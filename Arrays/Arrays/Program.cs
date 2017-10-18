@@ -24,7 +24,8 @@ namespace Arrays
             Console.WriteLine(flags[2]);
 
             var names = new string[3] {"Jack", "John", "Mary"};
-            Console.WriteLine(names[1]);
+            Console.WriteLine(names[2]);
+            //dumb comments for testn
 
         }
     }
