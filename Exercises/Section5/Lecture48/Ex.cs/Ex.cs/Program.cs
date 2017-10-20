@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,22 +14,23 @@ namespace Ex.cs
         //{
         //    sum += entry;
         //}
-        static void Main(string[] args)
+        static  int Main()
         {
             int sum = 0;
-            
-            Console.WriteLine("enter a number or Ok ");
-              entry. = Console.ReadLine();
-            if (entry != "ok" || entry != "OK")
+            Console.WriteLine("Give me a number");
+            if (Console.ReadLine() != "ok")
             {
-                entry = int.Parse(Console.ReadLine());
-                //sum += entry;
+                var entry = Convert.ToInt32(Console.ReadLine());
+                sum = sum + entry;
+                Console.WriteLine("the sum is "+ sum);
+                return sum;
+            }
+            
+            else if (Console.ReadLine()== "ok")
+            {
                 return;
             }
-            else
-            {
 
-            }
         }
     }
 }
