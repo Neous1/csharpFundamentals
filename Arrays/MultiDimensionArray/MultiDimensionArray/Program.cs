@@ -24,6 +24,13 @@ namespace MultiDimensionArray
             // Clear() (setting elements to zero)
             Array.Clear(numbers, 0, 2);
 
+            Console.WriteLine("Effect of Clear()");
+            foreach (var n in numbers)
+            {
+                Console.WriteLine(n);
+            }
+
+
         }
     }
 }
