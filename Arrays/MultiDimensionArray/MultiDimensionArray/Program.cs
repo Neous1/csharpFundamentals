@@ -10,7 +10,7 @@ namespace MultiDimensionArray
     {
         static void Main(string[] args)
         {
-            int [] numbers = new int[] {3, 7, 9, 2, 14, 6};
+            var numbers = new[] {3, 7, 9, 2, 14, 6};
 
         }
     }
