@@ -12,6 +12,10 @@ namespace MultiDimensionArray
         {
             var numbers = new[] {3, 7, 9, 2, 14, 6};
 
+            //length
+            Console.WriteLine("length: " + numbers.Length);
+
+
         }
     }
 }
