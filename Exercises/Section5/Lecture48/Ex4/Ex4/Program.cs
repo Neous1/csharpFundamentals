@@ -1,9 +1,4 @@
 ﻿using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Ex4
 {
@@ -13,19 +8,31 @@ namespace Ex4
         {
             
 
-            ///pick a number between 1 and 10
-            /// prompt user to select a number 
-            /// if user number == computer number ; 
-            /// display sign you won
-            /// else you loose.
-            /// 
+            /////pick a number between 1 and 10
+            ///// prompt user to select a number 
+            ///// if user number == computer number ; 
+            ///// display sign you won
+            ///// else you loose.
+            ///// 
             
             Random random = new Random();
-            int comp = random.Next(0, 10);
+            int compNum = random.Next(0, 10);
+            Console.WriteLine(compNum);
 
-            Console.WriteLine("guess which number");
-            Console.ReadLine("")
-            Console.WriteLine(comp);
+
+            int trials = 4;
+
+            for (int i = 0; i < trials; i++)
+            {
+                Console.WriteLine("Guess a number");
+                var userNum = Convert.ToInt32(Console.ReadLine());
+                if (userNum == compNum)
+                {
+                    Console.WriteLine("You won");
+                    break;
+                }
+
+            }
 
 
         }
