@@ -20,6 +20,10 @@ namespace MultiDimensionArray
             var index = Array.IndexOf(numbers, 9);
             Console.WriteLine("Index of 9: "+ index);
 
+
+            // Clear() (setting elements to zero)
+            Array.Clear(numbers, 0, 2);
+
         }
     }
 }
