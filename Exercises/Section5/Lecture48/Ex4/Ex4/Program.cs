@@ -9,27 +9,35 @@ namespace Ex4
             
 
             /////pick a number between 1 and 10
-            ///// prompt user to select a number 
-            ///// if user number == computer number ; 
-            ///// display sign you won
-            ///// else you loose.
-            ///// 
+
             
             Random random = new Random();
             int compNum = random.Next(0, 10);
-            Console.WriteLine(compNum);
+            //Console.WriteLine(compNum);
 
 
             int trials = 4;
 
+
+            ///// prompt user to select a number 
+            Console.WriteLine("Guess a number");
+
+            //cycle thru tries and guess computer's number
             for (int i = 0; i < trials; i++)
             {
-                Console.WriteLine("Guess a number");
                 var userNum = Convert.ToInt32(Console.ReadLine());
                 if (userNum == compNum)
                 {
                     Console.WriteLine("You won");
                     break;
+                }
+                if ((userNum != compNum) && (i == 3))
+                {
+                    Console.WriteLine("You lost");
+                }
+                else
+                {
+                    Console.WriteLine("Try Again");
                 }
 
             }
