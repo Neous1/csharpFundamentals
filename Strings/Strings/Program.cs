@@ -27,7 +27,7 @@ namespace Strings
             Console.WriteLine(fullName.Replace("Joel", "Jolie"));
 
             //isNullOrEmpty
-            if(String.IsNullOrEmpty(""))
+            if(String.IsNullOrEmpty(" "))
                 Console.WriteLine("Invalid");
         }
     }
