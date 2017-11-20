@@ -22,7 +22,8 @@ namespace StringBuilding
                 .Insert(0, new string('-', 10));
 
             Console.WriteLine(builder);
-            Console.WriteLine("First Char: " + builder[0]);
+            Console.WriteLine("First Char: " + builder[0])
+
             
         }
     }
