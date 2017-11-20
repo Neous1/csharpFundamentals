@@ -33,6 +33,11 @@ namespace Strings
             if (String.IsNullOrWhiteSpace(" "))
                 Console.WriteLine("Invalid");
 
+            //convert
+            var str = 42;
+            var age = Convert.ToByte(str);// noone canbe 255 yo
+            Console.WriteLine();
+
 
 
         }
