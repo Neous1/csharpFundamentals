@@ -25,18 +25,22 @@ namespace Strings
             Console.WriteLine("LastName: "+ names[1]);
 
             Console.WriteLine(fullName.Replace("Joel", "Jolie"));
-
+            Console.WriteLine();
             //isNullOrEmpty
             if(String.IsNullOrEmpty(" ".Trim()))
                 Console.WriteLine("Invalid");
 
             if (String.IsNullOrWhiteSpace(" "))
                 Console.WriteLine("Invalid");
-
+            Console.WriteLine();
             //convert
             var str = 42;
             var age = Convert.ToByte(str);// noone canbe 255 yo
+            Console.WriteLine(age);
             Console.WriteLine();
+
+            float price = 29.95f;
+            Console.WriteLine(price.ToString("C0"));//"CO argument will round it up to 30 from 29.95
 
 
 
