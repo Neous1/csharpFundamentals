@@ -29,6 +29,12 @@ namespace Strings
             //isNullOrEmpty
             if(String.IsNullOrEmpty(" ".Trim()))
                 Console.WriteLine("Invalid");
+
+            if (String.IsNullOrWhiteSpace(" "))
+                Console.WriteLine("Invalid");
+
+
+
         }
     }
 }
