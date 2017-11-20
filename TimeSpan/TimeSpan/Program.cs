@@ -17,6 +17,11 @@ namespace TimeSpan
             var duration = end - start;
             Console.WriteLine("Duration :" + duration);
 
+            //Properties
+            Console.WriteLine("Minutes: " + timeSpan.Minutes);
+            Console.WriteLine("Total Minutes: " + timeSpan.TotalMinutes);
+
+
 
         }
     }
