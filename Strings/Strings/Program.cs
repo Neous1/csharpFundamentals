@@ -25,6 +25,10 @@ namespace Strings
             Console.WriteLine("LastName: "+ names[1]);
 
             Console.WriteLine(fullName.Replace("Joel", "Jolie"));
+
+            //isNullOrEmpty
+            if(String.IsNullOrEmpty(""))
+                Console.WriteLine("Invalid");
         }
     }
 }
