@@ -10,7 +10,7 @@ namespace StringBuilding
     {
         static void Main(string[] args)
         {
-            var builder = new StringBuilder("Hello World");
+            var builder = new StringBuilder();
             builder.Append('-', 10);
             builder.AppendLine();
             builder.Append("Header");
@@ -19,7 +19,7 @@ namespace StringBuilding
 
             builder.Replace('-', '+');
 
-     
+            builder.Remove(0, 10); // remove 10 character starting at index 0
 
 
 
