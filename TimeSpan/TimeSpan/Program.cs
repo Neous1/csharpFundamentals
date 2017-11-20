@@ -23,6 +23,8 @@ namespace TimeSpan
 
             //Add 
             Console.WriteLine("Add Example: "+ timeSpan.Add(System.TimeSpan.FromMinutes(8)));
+            Console.WriteLine("Subtract Example: "+ timeSpan.Subtract(System.TimeSpan.FromMinutes(2)));
+
 
 
         }
