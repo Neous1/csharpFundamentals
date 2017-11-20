@@ -17,6 +17,9 @@ namespace StringBuilding
             builder.AppendLine();
             builder.Append('-', 10);
 
+            builder.Replace('-', '+');
+
+     
 
 
 
