@@ -28,6 +28,8 @@ namespace TimeSpan
             //toString
             Console.WriteLine("Tostring" + timeSpan.ToString());
 
+            //Parse
+            Console.WriteLine("Parse: " + System.TimeSpan.Parse("01:02:03"));
 
         }
     }
