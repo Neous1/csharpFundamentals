@@ -21,12 +21,29 @@ namespace Lists
 
             Console.WriteLine("Count: " + numbers.Count);
 
+
+            // One cannot remove an element inside a foreach loop another method of iteration is needed
             numbers.Remove(1);
+            foreach (var number in numbers)
+            {
+                //Console.WriteLine(number);
+            }
+
+
+            numbers.Add(1);
+
+            for (var i = 0; i < numbers.Count; i++)
+            {
+                if (numbers[i] == 1)
+                {
+                    numbers.Remove(numbers[i]);
+
+                }
+            }
             foreach (var number in numbers)
             {
                 Console.WriteLine(number);
             }
-
         }
     }
 }
