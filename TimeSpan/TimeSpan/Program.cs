@@ -21,6 +21,8 @@ namespace TimeSpan
             Console.WriteLine("Minutes: " + timeSpan.Minutes);
             Console.WriteLine("Total Minutes: " + timeSpan.TotalMinutes);
 
+            //Add 
+            Console.WriteLine("Add Example: "+ timeSpan.Add(System.TimeSpan.FromMinutes(8)));
 
 
         }
