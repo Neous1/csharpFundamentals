@@ -22,6 +22,24 @@ namespace Directories
                 Console.WriteLine(directory);
 
             Directory.Exists(".....");//specify a path to check if it exist
+
+
+            var directoryInfo = new DirectoryInfo("......"); // specify path
+            directoryInfo.GetFiles();
+            directoryInfo.GetDirectories();
+
+
+            var path = @"C:\Users\yvon\dev\CSharpFundamentals\HelloWorld\HelloWorld.sln";
+
+            var dotIndex = path.IndexOf('.');
+            var extension = path.Substring(dotIndex);
+            Console.WriteLine();
+
+            Console.WriteLine("Extension: " + Path.GetExtension(path));
+            Console.WriteLine("File Name: " + Path.GetFileName(path));
+            Console.WriteLine("File Name Without Extension: " + Path.GetFileNameWithoutExtension(path));
+            Console.WriteLine("Diretory Name: " + Path.GetDirectoryName(path));
+
         }
     }
 }
