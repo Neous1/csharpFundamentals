@@ -13,9 +13,13 @@ namespace Directories
         {
             Directory.CreateDirectory(@"c:\temp\folder1");
 
-            var files = Directory.GetFiles(@"c:\users\yvon\dev\csharpFundamentals", "*.sln", SearchOption.AllDirectories);
-            foreach(var file in files)
-                Console.WriteLine(file);
+            //var files = Directory.GetFiles(@"c:\users\yvon\dev\csharpFundamentals", "*.txt", SearchOption.AllDirectories);
+            //foreach(var file in files)
+            //    Console.WriteLine(file);
+
+            var directories = Directory.GetDirectories(@"c:\users\yvon\dev", "*.*", SearchOption.AllDirectories);
+            foreach(var directory in directories)
+                Console.WriteLine(directory);
         }
     }
 }
