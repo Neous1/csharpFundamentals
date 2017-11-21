@@ -20,6 +20,8 @@ namespace Directories
             var directories = Directory.GetDirectories(@"c:\users\yvon\dev", "*.*", SearchOption.AllDirectories);
             foreach(var directory in directories)
                 Console.WriteLine(directory);
+
+            Directory.Exists(".....");//specify a path to check if it exist
         }
     }
 }
