@@ -24,14 +24,28 @@ namespace Ex1
             {
                 Console.WriteLine("Enter a name");
                 name = Console.ReadLine();
-                if(name != null)
+                if(name != "")
                 {
                     Names.Add(name);
                     count++;
                 }
 
-            } while (name!= null);
+            } while (name != "");
 
+            //foreach (var item in Names)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            if(count == 1)
+            {
+                Console.WriteLine(Names[0]);
+                
+            }
+            else if (count == 2)
+            {
+                Console.WriteLine(Names[0], Names[0]);
+            }
         }
     }
 }
