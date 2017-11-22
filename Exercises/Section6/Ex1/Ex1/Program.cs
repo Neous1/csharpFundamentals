@@ -16,21 +16,21 @@ namespace Ex1
             /// if count = 2 diplay name [0] and name [1]
             /// if count > 2 diplay name [0] and name [1] and count
 
+            List<string> Names = new List<string>();
+            var count = 0;
+            string name;
 
-
-            //prompt user for name
-            //display reversed name using array.reverse();
-
-            Console.WriteLine("Please enter you name");
-            var name = Console.ReadLine();
-            if (name != null)
+            do
             {
-                name = new string(name.Reverse().ToArray());
-            }
-            Console.WriteLine(name);
+                Console.WriteLine("Enter a name");
+                name = Console.ReadLine();
+                if(name != null)
+                {
+                    Names.Add(name);
+                    count++;
+                }
 
-
-
+            } while (name!= null);
 
         }
     }

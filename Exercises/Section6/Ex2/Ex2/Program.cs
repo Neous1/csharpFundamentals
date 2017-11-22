@@ -12,11 +12,12 @@ namespace Ex2
         {
             Console.WriteLine("Please enter you name");
             var name = Console.ReadLine();
+            var result="";
             if (name != null)
             {
-                name = new string(name.Reverse().ToArray());
+                 result = new string(name.Reverse().ToArray());
             }
-            Console.WriteLine(name);
+            Console.WriteLine(result);
         }
     }
 }
