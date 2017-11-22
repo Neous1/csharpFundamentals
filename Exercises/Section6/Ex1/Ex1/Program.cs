@@ -35,10 +35,12 @@ namespace Ex1
                     {
                         foreach (var item in Names)
                         {
-                            Console.WriteLine(item + count);
-                        }                        
+                            Console.WriteLine(item);
+                            
+                        }
+                        Console.WriteLine("total count: " + count);
                     }
-                    if (count == 2)
+                    if (count <= 2)
                     {
                         foreach (var item in Names)
                         {
