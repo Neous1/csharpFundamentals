@@ -43,11 +43,13 @@ namespace Ex3
             }
 
             numbers.Sort();
+            Console.WriteLine();
 
             foreach (var num in numbers)
             {
                 Console.WriteLine(num);
             }
+           
         }
     }
 }
