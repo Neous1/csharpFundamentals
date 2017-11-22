@@ -29,23 +29,26 @@ namespace Ex1
                     Names.Add(name);
                     count++;
                 }
+                else
+                {
+                    if (count > 2)
+                    {
+                        foreach (var item in Names)
+                        {
+                            Console.WriteLine(item + count);
+                        }                        
+                    }
+                    if (count == 2)
+                    {
+                        foreach (var item in Names)
+                        {
+                            Console.WriteLine(item);
+                        }
+                    }
+                }
 
             } while (name != "");
 
-            //foreach (var item in Names)
-            //{
-            //    Console.WriteLine(item);
-            //}
-
-            if(count == 1)
-            {
-                Console.WriteLine(Names[0]);
-                
-            }
-            else if (count == 2)
-            {
-                Console.WriteLine(Names[0], Names[0]);
-            }
         }
     }
 }
