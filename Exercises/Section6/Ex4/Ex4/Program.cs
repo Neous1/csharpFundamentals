@@ -12,15 +12,22 @@ namespace Ex4
         {
             var numbers = new List<int>();
             Console.WriteLine("Enter a number");
-            var input = Convert.ToInt32(Console.ReadLine());
-            numbers.Add(input);
+            var input = Console.ReadLine();
+            
+
+            while (input != "quit")
+            {
+                /*if inut a is a number 
+                 * convert to int
+                 * add to list
+                 */
+
+
+            }
 
             foreach (var item in numbers)
             {
-                if (numbers.Distinct)
-                {
-
-                }
+                Console.WriteLine(item);
 
             }
             
