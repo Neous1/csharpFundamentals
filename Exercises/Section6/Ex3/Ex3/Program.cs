@@ -36,7 +36,7 @@ namespace Ex3
                 var num = Convert.ToInt32(Console.ReadLine());
                 if (numbers.Contains(num))
                 {
-                    Console.WriteLine("Enter another numer other that " + num);
+                    Console.WriteLine("Enter another numer other than " + num);
                     continue;
                 }
                 numbers.Add(num);
