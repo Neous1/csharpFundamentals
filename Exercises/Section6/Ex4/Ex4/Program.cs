@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ex4
 {
+    /**
+     * 4- Write a program and 
+     * ask the user to continuously enter a number or type "Quit" to exit. 
+     * The list of numbers may include duplicates. 
+     * Display the unique numbers that the user has entered.
+     */
     class Program
     {
         static void Main(string[] args)
@@ -13,24 +19,16 @@ namespace Ex4
             var numbers = new List<int>();
             Console.WriteLine("Enter a number");
             var input = Console.ReadLine();
-            
-
             while (input != "quit")
             {
-                /*if inut a is a number 
-                 * convert to int
-                 * add to list
-                 */
+                    if (input != "quit")
+                        numbers.Add(Convert.ToInt32(input));
+                    else //if (numbers.Count > 0)
 
-
+                        foreach (var number in numbers)
+                            Console.WriteLine(number);
+                break;
             }
-
-            foreach (var item in numbers)
-            {
-                Console.WriteLine(item);
-
-            }
-            
 
         }
     }
